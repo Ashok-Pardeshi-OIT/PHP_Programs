@@ -1,0 +1,10 @@
+<h1>
+<?php
+    $sec=$_POST['nm1'];
+	$h=intval($sec/3600);
+    $sec=$sec%3600;
+    $m=intval($sec/60);
+	$s=$sec%60;
+	echo"$h:$m:$s";
+?>
+</h1>
