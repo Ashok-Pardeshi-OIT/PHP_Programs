@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Background Image</title>
+    <script>
+        function setBackground() {
+            var selectedImage = document.getElementById("imageSelect").value;
+            document.body.style.backgroundImage = "url('" + selectedImage + "')";
+        }
+    </script>
+</head>
+<body>
+    <form method="post" action="set_background.php">
+        <label for="imageSelect">Choose an image:</label>
+        <select id="imageSelect" name="image" onchange="setBackground()">
+            <option value="image1.jpg">Image 1</option>
+            <option value="image2.jpg">Image 2</option>
+            <option value="image3.jpg">Image 3</option>
+            <option value="image4.jpg">Image 4</option>
+            <option value="image5.jpg">Image 5</option>
+            <option value="image6.jpg">Image 6</option>
+        </select>
+        <input type="submit" value="Set Background">
+    </form>
+</body>
+</html>
