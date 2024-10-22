@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        h2 {
+            margin-bottom: 20px;
+        }
+        input[type="text"], input[type="date"] {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <form action="slip_18_insert.php" method="get">
+        <center>
+            <h2>Enter Employee Details</h2>
+            <label for="a_no">Enter Employee No:</label>
+            <input type="text" id="a_no" name="a_no" required>
+            <label for="a_name">Enter Employee Name:</label>
+            <input type="text" id="a_name" name="a_name" required>
+            <label for="d_join">Enter Date Of Join:</label>
+            <input type="date" id="d_join" name="d_join" required>
+            <label for="a_sal">Enter Salary:</label>
+            <input type="text" id="a_sal" name="a_sal" required>
+            <label for="a_add">Enter Address:</label>
+            <input type="text" id="a_add" name="a_add" required>
+            <input type="submit" value="Submit">
+        </center>
+    </form>
+</body>
+</html>
